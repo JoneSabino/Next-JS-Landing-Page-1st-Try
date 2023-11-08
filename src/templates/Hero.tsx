@@ -10,15 +10,15 @@ import { Logo } from './Logo';
 const Hero = () => (
   <Background color="bg-gray-100">
     <Section yPadding="py-6">
-      <NavbarTwoColumns logo={<Logo xl />}>
-        <li>
+      <NavbarTwoColumns logo={<Logo xl />} className="ml-[-192px]">
+        {/* <li>
           <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
             GitHub
           </Link>
         </li>
         <li>
           <Link href="/">Sign in</Link>
-        </li>
+        </li> */}
       </NavbarTwoColumns>
     </Section>
 
@@ -26,15 +26,39 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developers</span>
+            {'Portal de Ferramentas\n'}
+            <span className="text-primeBlue">Prime Control</span>
           </>
         }
-        description="The easiest way to build a React landing page in seconds."
+        description={
+          <span className="mx-auto max-w-md text-gray-1000">
+            {' '}
+            Acesso centralizado às ferramentas que potencializam a produtividade
+            em QA. Navegue pelos nossos recursos especializados e acelere seu
+            processo de testes.
+          </span>
+        }
         button={
-          <Link href="https://creativedesignsguru.com/category/nextjs/">
-            <Button xl>Download Your Free Theme</Button>
-          </Link>
+          <div className="flex justify-center space-x-4">
+            <Link href="/link-to-first-action">
+              <Button
+                xl
+                className={`w-64 bg-primeBlue text-white hover:bg-primeBlue-dark`}
+              >
+                Test Coder API
+              </Button>{' '}
+              {/* Adjust the hover class as needed */}
+            </Link>
+            <Link href="/link-to-second-action">
+              <Button
+                xl
+                className="w-64 bg-primeBlue text-white hover:bg-primeBlue-dark"
+              >
+                Test Data Manager
+              </Button>{' '}
+              {/* Adjust the hover class as needed */}
+            </Link>
+          </div>
         }
       />
     </Section>

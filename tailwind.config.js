@@ -15,6 +15,10 @@ module.exports = {
     },
     extend: {
       colors: {
+        primeBlue: {
+          DEFAULT: '#004a8f',
+          dark: '#002753', // A darker shade of primeBlue for the hover state
+        },
         primary: {
           100: '#E6F6FE',
           200: '#C0EAFC',
@@ -36,10 +40,14 @@ module.exports = {
           700: '#4a5568',
           800: '#2d3748',
           900: '#1a202c',
+          1000: '#6d6e71',
         },
       },
       lineHeight: {
         hero: '4.5rem',
+      },
+      fontFamily: {
+        titillium: ['Titillium Web', 'sans-serif'],
       },
     },
   },

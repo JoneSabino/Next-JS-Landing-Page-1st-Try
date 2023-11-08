@@ -4,10 +4,13 @@ import type { ReactNode } from 'react';
 type INavbarProps = {
   logo: ReactNode;
   children: ReactNode;
+  className?: string;
 };
 
 const NavbarTwoColumns = (props: INavbarProps) => (
-  <div className="flex flex-wrap items-center justify-between">
+  <div
+    className={`flex flex-wrap items-center justify-between ${props.className}`}
+  >
     <div>
       <Link href="/">{props.logo}</Link>
     </div>

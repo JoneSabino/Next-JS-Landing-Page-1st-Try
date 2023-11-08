@@ -1,6 +1,6 @@
 export const AppConfig = {
-  site_name: 'Starter',
-  title: 'Nextjs Starter',
-  description: 'Starter code for your Nextjs Boilerplate with Tailwind CSS',
-  locale: 'en',
+  site_name: 'Prime Control',
+  title: 'Produtos Prime Control',
+  description: 'gambisolve style',
+  locale: 'pt-br',
 };

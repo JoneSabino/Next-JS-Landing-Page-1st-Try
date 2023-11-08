@@ -1,20 +1,27 @@
 import className from 'classnames';
+import type { ReactNode } from 'react';
 
 type IButtonProps = {
   xl?: boolean;
-  children: string;
+  children: ReactNode;
+  className?: string;
+  color?: string;
 };
 
 const Button = (props: IButtonProps) => {
-  const btnClass = className({
-    btn: true,
-    'btn-xl': props.xl,
-    'btn-base': !props.xl,
-    'btn-primary': true,
-  });
+  const btnClass = className(
+    {
+      btn: true,
+      'btn-xl': props.xl,
+      'btn-base': !props.xl,
+      'btn-primary': false,
+    },
+    props.className,
+    props.color,
+  );
 
   return (
-    <div className={btnClass}>
+    <button className={btnClass}>
       {props.children}
 
       <style jsx>
@@ -40,7 +47,7 @@ const Button = (props: IButtonProps) => {
           }
         `}
       </style>
-    </div>
+    </button>
   );
 };
 
