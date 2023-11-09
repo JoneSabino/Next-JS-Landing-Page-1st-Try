@@ -3,8 +3,8 @@ import { Section } from '../layout/Section';
 
 const VerticalFeatures = () => (
   <Section
-    title="Nossas Ferramentas"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor at."
+  // title="Nossas Ferramentas"
+  // description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor at."
   >
     <VerticalFeatureRow
       title="Test Coder API"
@@ -16,13 +16,19 @@ const VerticalFeatures = () => (
         </>
       }
       image="/assets/images/tca.svg"
-      imageAlt="First feature alt text"
+      imageAlt="TCA alt text"
     />
     <VerticalFeatureRow
       title="Test Data Manager"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
+      description={
+        <>
+          O TDM é formado pela união de processos e recursos tecnológicos que
+          tem como objetivo oferecer massa de dados através do gerenciamento e
+          automação de fluxos de negócios.
+        </>
+      }
       image="/assets/images/tdm.svg"
-      imageAlt="Second feature alt text"
+      imageAlt="TDM alt text"
       reverse
     />
   </Section>

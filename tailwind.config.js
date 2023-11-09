@@ -48,6 +48,7 @@ module.exports = {
       },
       fontFamily: {
         titillium: ['Titillium Web', 'sans-serif'],
+        sans: ['Calibri', 'sans-serif'],
       },
     },
   },
