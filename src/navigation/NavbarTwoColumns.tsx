@@ -12,7 +12,7 @@ const NavbarTwoColumns = (props: INavbarProps) => (
     className={`flex flex-wrap items-center justify-between font-titillium ${props.className}`}
   >
     <div>
-      <Link href="/">{props.logo}</Link>
+      <Link href="https://primecontrol.com.br">{props.logo}</Link>
     </div>
 
     <nav>

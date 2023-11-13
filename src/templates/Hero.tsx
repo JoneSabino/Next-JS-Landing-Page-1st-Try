@@ -40,7 +40,7 @@ const Hero = () => (
         }
         button={
           <div className="flex justify-center space-x-4">
-            <Link href="/link-to-first-action">
+            <Link href="https://testcoder.primecontrol.com.br">
               <Button
                 xl
                 className={`w-64 bg-primeBlue text-white hover:bg-primeBlue-dark`}
@@ -49,7 +49,7 @@ const Hero = () => (
               </Button>{' '}
               {/* Adjust the hover class as needed */}
             </Link>
-            <Link href="/link-to-second-action">
+            <Link href="https://tdm.primecontrol.com.br">
               <Button
                 xl
                 className="w-64 bg-primeBlue text-white hover:bg-primeBlue-dark"
