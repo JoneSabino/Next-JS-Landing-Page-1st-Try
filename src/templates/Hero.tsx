@@ -40,7 +40,11 @@ const Hero = () => (
         }
         button={
           <div className="flex justify-center space-x-4">
-            <Link href="https://testcoder.primecontrol.com.br">
+            <Link
+              href="https://testcoder.primecontrol.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 xl
                 className={`w-64 bg-primeBlue text-white hover:bg-primeBlue-dark`}
@@ -49,7 +53,11 @@ const Hero = () => (
               </Button>{' '}
               {/* Adjust the hover class as needed */}
             </Link>
-            <Link href="https://tdm.primecontrol.com.br">
+            <Link
+              href="https://tdm.primecontrol.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
                 xl
                 className="w-64 bg-primeBlue text-white hover:bg-primeBlue-dark"
